@@ -76,12 +76,146 @@
     border: 0;
 }
 
-/* HEADER */
+/* HEADER BIEN HECHO PUESTO EN @MEDIA */
+
+/* header{
+    background-color: #14213D;
+    width: 100%;
+    padding-top: 80px;
+    height: 587px;
+    display: grid;
+    grid-template-columns: 47% 53%;
+}
+
+
+
+.grid_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid_title .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.title, #the,#vervetech, #company{
+    width: 349px;
+    height: 264px;
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-size: 43px;
+    line-height: 60px;
+    letter-spacing: 0.445em;
+
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px #000000;
+}
+.title #vervetech{
+    color: #FCA311;
+    font-weight: bold;
+}
 
 
 
 
 
+
+
+.grid_form{
+    background-image: url(../media/30.jpg);
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
+
+.grid_form, .header_form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header_form form{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+}
+
+.header_form h2{
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #FCA311;
+    text-align: center;
+
+}
+
+.header_form #form_username{
+    width: 232px;
+    height: 35px;
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 23px;
+    border: 0;
+    margin-top: 5px;
+}
+
+.header_form #form_password{
+    width: 232px;
+    height: 35px;
+    text-align: center;
+    background: #D9D9D9;
+    border-radius: 23px;
+    border: 0;
+    margin-top: 5px;
+}
+
+.header_form #form_login{
+    width: 105px;
+    height: 35px;
+    background: #14213D;
+    border-radius: 218px;
+    border: 0;
+    color:#FFFFFF;
+    margin-top: 10px;
+}
+
+.header_form #form_register{
+    text-decoration: none;
+    color: #FCA311;
+} */
+
+/* HEADER BIEN HECHO PUESTO EN @MEDIA */
+
+
+
+
+
+
+
+
+/* HEADER ANTIGUO, MAL HECH */
 /* .masthead{
     display: grid;
     grid-template-columns: 47% 53%;
@@ -202,6 +336,17 @@ form{
     border: 0;
     
 } */
+/* HEADER ANTIGUO, MAL HECH */
+
+
+
+
+
+
+
+
+
+
 
 
 
