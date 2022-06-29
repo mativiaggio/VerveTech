@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="masthead">
+    <div id="main">
         <nav class="navbar">
             <div class="navbar_items">
                 <label class="logo"><a href="index.html">HOME</a></label>
@@ -25,54 +25,80 @@
                 </ul>
             </div>
         </nav>
-        <div>
-            <h1 class="title">
-                The <br> <sup>Verve Tech</sup> <br> Company
-            </h1>
-        </div>
-        <div class="header_form">
-            <h2 id="index_form_title">Let's Get <br> Started</h2>
-            <div id="underline_top"></div>
-            <div id="underline_bottom"></div>
-            <form action="" method="POST">
-                <input type="text" placeholder="username" id="form_username">
+        <header class="masthead">
+            <div>
+                <h1 class="title">
+                    The <br> <sup>Verve Tech</sup> <br> Company
+                </h1>
+            </div>
+            <div class="header_form">
+                <h2 id="index_form_title">Let's Get <br> Started</h2>
+                <div id="underline_top"></div>
+                <div id="underline_bottom"></div>
+                <form action="" method="POST">
+                    <input type="text" placeholder="username" id="form_username">
 
-                <input type="password" placeholder="password" id="form_password">
+                    <input type="password" placeholder="password" id="form_password">
 
-                <button type="submit" id="form_login">LOGIN</button>
+                    <button type="submit" id="form_login">LOGIN</button>
 
-                <a href="#" id="form_register">Need an account?</a>
-            </form>
-        </div>
-    </header>
-    <main class="main">
-        <div class="content_main">
-            <img class="main_index_img" src="media/professional-programmer-working-late-in-the-dark-office (1).jpg" alt="main.index">
-            <h2 class="main_title">
-                Experience the true <br> <sup1> Feeling </sup1> of <br> Technology
-            </h2>
-            <h3 class="main_subtitle">
-                Choose a Topic
-            </h3>
-            <div id="underline_main_subtitle"></div>
-            <a href="#">
-                <div class="hardware_topic">
-                    <h3>Hardware</h3>
-                </div>
-            </a>
-            <a href="#">
-                <div class="software_topic">
-                    <h3>Software</h3>
-                </div>
-            </a>
-        </div>
-    </main>
-    <footer>
-        <div class="footer">
-            <h1>Verve <br> Tech</h1>
-            <p>©Copyright all rights reserved</p>
-        </div>
+                    <a href="#" id="form_register">Need an account?</a>
+                </form>
+            </div>
+        </header>
+        <section class="main" id="maincontent">
+            <div class="content_main">
+                <img class="main_index_img" src="media/professional-programmer-working-late-in-the-dark-office (1).jpg" alt="main.index">
+                <h2 class="main_title">
+                    Experience the true <br> <sup1> Feeling </sup1> of <br> Technology
+                </h2>
+                <h3 class="main_subtitle">
+                    Choose a Topic
+                </h3>
+                <div id="underline_main_subtitle"></div>
+                <a href="#hardwareproducts">
+                    <div class="hardware_topic">
+                        <h3>Hardware</h3>
+                    </div>
+                </a>
+                <a href="#softwareproducts">
+                    <div class="software_topic">
+                        <h3>Software</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="main_2" id="hardwareproducts">
+            <div id="hardware_grid" >
+                    <div class="h_product1"></div>
+                    <div class="h_product2"></div>
+                    <div class="h_product3"></div>
+                    <div class="h_product4"></div>
+                    <div class="h_product5"></div>
+                    <div class="h_product6"></div>
+            </div>
+        </section>
+        <section class="main_3" id="softwareproducts">
+            <div id="software_grid" >
+                    <div class="s_product1">Software Product 1</div>
+                    <div class="s_product2">Software Product 2</div>
+                    <div class="s_product3">Software Product 3</div>
+                    <div class="s_product4">Software Product 4</div>
+                    <div class="s_product5">Software Product 5</div>
+                    <div class="s_product6">Software Product 6</div>
+            </div>
 
-    </footer>
+            <section class="software_grid">
+
+            </section>
+        </section>
+        <footer>
+            <div class="footer" id="footer">
+                <h1>Verve <br> Tech</h1>
+                <p>©Copyright all rights reserved</p>
+            </div>
+
+        </footer>
+    </div>
 </body>
 </html>
