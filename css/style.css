@@ -4,52 +4,14 @@
     padding: 0;
     margin: 0;
 }
-body{
-    width: 100%;
-    font-family: 'Gothic A1', sans-serif;
-}
-
-#main {
-    width: 100%;
-    height: 600px;
-    display: grid;
-    grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
-    grid-template-rows: auto;
-    grid-template-columns: 100%;
-}
-
-nav{
-    grid-area: nav;
-}
-header{
-    grid-area: header;
-}
-section#maincontent{
-    grid-area: maincontent;
-}
-section#hardwareproducts{
-    grid-area: hardwareproducts;
-}
-section#softwareproducts{
-    grid-area: softwareproducts;
-}
-footer{
-    grid-area:footer;
-}
 
 
-/* HEADER */
-
-header{
-    width: 639px;
-    height: 667px;
-    background-color: #14213D;
-}
+/* NAVBAR */
 .navbar{
     position: fixed;
     width: 100%;
-    /* height: 60px;
-    left: calc(50% - 1320px/2);
+    height: 80px;
+    /*left: calc(50% - 1320px/2);
     top: 20px; */
     background-color: white;
     z-index: 2;
@@ -61,7 +23,7 @@ header{
 .navbar_items{
     display: flex;
     justify-content: space-between;
-    margin-top: 21px;
+    margin-top: 31px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -71,28 +33,32 @@ header{
     display: flex;
     list-style: none;
     text-decoration: none;
+    justify-content: space-between;
 }
-.navbar_ls{
+.navbar_ls_buttons{
     list-style: none;
 }
-.navbar_ls a{
+.navbar_ls_buttons a{
     text-decoration: none;
     color: white;
+
 }
 .navbar_items a{
     text-decoration: none;
     color: #000000;
 }
 .nav_buttons{
-    padding-right: 30px;
+    padding-right: 70px;
 }
 #sign_up_button{
-    color:#FFFFFF
+    color:#000000
 }
 .logo{
     margin-left: 20px;
     
     color: #000000;
+
+    margin-right: 20px;
 }
 .logo a{
     text-decoration: none;
@@ -100,49 +66,42 @@ header{
     font-weight: bold;
 }
 .search{
-    position: absolute;
     width: 365px;
     height: 27px;
     left: 167px;
-    top: 17px;
+    margin-top: -20px;
     text-indent: 10px;
     background: #D8D8D8;
     border-radius: 107px;
     border: 0;
 }
-#login{
-    box-sizing: border-box;
 
-    position: absolute;
-    width: 90px;
-    height: 36px;
-    left: calc(50% - 90px/2 + 441px);
-    top: calc(50% - 36px/2);
+/* HEADER */
 
-    background: #FCA311;
-    border: 1px solid rgba(200, 130, 17, 0.5);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    text-align: center;
-    padding-top: 8px;
+header{
+    background-color: #14213D;
+    padding-top: 80px;
+    height: 587px;
 }
-#sign_up{
-    box-sizing: border-box;
 
-    position: absolute;
-    width: 90px;
-    height: 36px;
-    left: calc(50% - 90px/2 + 569px);
-    top: calc(50% - 36px/2);
-
-    background: #14213D;
-    border: 1px solid rgba(13, 22, 40, 0.5);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-    padding-top: 8px;
+.masthead{
+    display: grid;
+    grid-template-columns: 47% 53%;
 }
+
+
+.grid_form{
+    background-image: url(../media/30.jpg);
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
+
 .title{
     position: absolute;
     width: 349px;
@@ -165,61 +124,42 @@ header{
     color: #FCA311;
     font-weight: bold;
 }
+
+
+
 .header_form{
-    background-image: url('../media/30.jpg');
-    position: absolute;
-    width: 727px;
-    height: 667px;
-    left: 639px;
-    top: 0px;
-
+    display: grid;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 25%;
+    text-align: center;
 }
-#index_form_title{
-    position: absolute;
-    width: 200px;
-    height: 60px;
-    left: 280px;
-    top: 150px;
 
+form{
+    margin-top: -10%;
+}
+
+
+#index_form_title{
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
-    text-align: center;
     letter-spacing: 0.1em;
     z-index: 1;
     color: #000000;
+    text-decoration: underline;
+    text-decoration-color: #FCA311;
     
 }
-#underline_top{
-    position: absolute;
-    width: 128px;
-    height: 7px;
-    left: 315px;
-    top: 169px;
 
-
-    background: rgba(252, 163, 17, 0.5);
-    border-radius: 4px;
-}
-#underline_bottom{
-    position: absolute;
-    width: 107px;
-    height: 7px;
-    left: 325px;
-    top: 198px;
-
-
-    background: rgba(252, 163, 17, 0.5);
-    border-radius: 4px;
-}
 #form_username{
     position: absolute;
     width: 232px;
     height: 35px;
-    left: 265px;
-    top: 250px;
+    margin-left: -8%;
     text-align: center;
     background: #D9D9D9;
     border-radius: 23px;
@@ -229,8 +169,8 @@ header{
     position: absolute;
     width: 232px;
     height: 35px;
-    left: 265px;
-    top: 310px;
+    margin-top: 25px;
+    margin-left: -8%;
     text-align: center;
     background: #D9D9D9;
     border-radius: 23px;
@@ -240,9 +180,8 @@ header{
     position: absolute;
     width: 105px;
     height: 35px;
-    left: 332px;
-    top: 390px;
-
+    margin-top: 4%;
+    margin-left: -3.5%;
     background: #14213D;
     border-radius: 218px;
     border: 0;
@@ -252,9 +191,8 @@ header{
     position: absolute;
     width: 131px;
     height: 22px;
-    left: 320px;
-    top: 445px;
-
+    margin-top: 6%;
+    margin-left: -4%;
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 400;
@@ -266,42 +204,51 @@ header{
     border: 0;
     
 }
-/* MAIN */
+
 .main{
-    position: absolute;
-    width: 100%;
-    height: 667px;
-    left: 0px;
-    top: 667px;
-
     background: linear-gradient(120.75deg, #14213D 48.17%, #36569C 97.66%);
+    height: 590px;
 }
+
 .content_main{
-    position: absolute;
-    width: 1190px;
-    height: 520px;
-    left: 80px;
-    top: 123px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 
-    background: #FFFFFF;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
+
 }
+
 .main_index_img{
-    position: absolute;
-    width: 548px;
-    height: 520px;
-    left: 0px;
-    top: 0px;
-
-    background: url(image.png);
-    border-radius: 16px 0px 0px 16px;
+    width: 500px;
+    display: flex;
+    justify-self: end;
+    margin-top: 25px;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
 }
+
+.aside_main_content{
+    background-color: white;
+    margin-top: 25px ;
+    width: 500px;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas: 'main_title main_title' 'main_subtitle main_subtitle' 'hardware_topic software_topic' 'none none';
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 25% 25%;
+    text-decoration: none;
+}
+
 .main_title{
-    position: absolute;
-    width: 651px;
+    grid-area: main_title;
+    width: 500px;
     height: 202px;
-    left: 550px;
     top: 25px;
 
     font-family: 'Gothic A1';
@@ -317,18 +264,19 @@ header{
     color: #000000;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+
+
 }
 .main_title sup1 {
     color: #FF9E00;
     font-weight: bold;
 }
 .main_subtitle{
-    position: absolute;
-    width: 651px;
+    grid-area: main_subtitle;
+    width: 500px;
     height: 47px;
-    left: 550px;
-    top: 250px;
-
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 300;
@@ -340,41 +288,28 @@ header{
     letter-spacing: 0.145em;
 
     color: #000000;
-
-}
-#underline_main_subtitle{
-    position: absolute;
-    width: 236px;
-    height: 10px;
-    left: 755px;
-    top: 268px;
-    
-    background: rgba(252, 163, 17, 0.71);
-    border-radius: 12px;
 }
 .hardware_topic{
-    position: absolute;
-    width: 188px;
-    height: 188px;
+    grid-area: hardware_topic;
+    border: 1px solid black;
+    /* position: absolute; */
+    width: 150px;
+    height: 100px;
     left: 620px;
     top: 310px;
-
+    align-items: center;
+    justify-items: center;
     background: #14213D;
     border-radius: 22px;
 }
-
 .hardware_topic h3{
-    position: absolute;
-    width: 188px;
-    height: 35px;
-    left: 0px;
-    top: 76px;
-
+    text-decoration: none;
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 110%;
+    margin-top: 2rem;
     /* or 35px */
 
     text-align: center;
@@ -385,46 +320,35 @@ header{
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .software_topic{
-    position: absolute;
-    width: 188px;
-    height: 188px;
+    grid-area: software_topic;
+    width: 150px;
+    height: 100px;
     left: 920px;
     top: 310px;
-
+    align-items: center;
+    justify-items: center;
     background: #FCA311;
     border-radius: 22px;
 }
 .software_topic h3{
-    position: absolute;
-    width: 188px;
-    height: 35px;
-    left: 0px;
-    top: 76px;
-
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 300;
     font-size: 32px;
     line-height: 110%;
     /* or 35px */
-
+    margin-top: 2rem;
     text-align: center;
     letter-spacing: 0.045em;
 
     color: #FFFFFF;
-
+    align-content: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-/* main_2 */
-
-
 .main_2{
-    position: absolute;
     width: 100%;
     height: 667px;
     left: 0px;
-    top: 1334px;
 
     background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
 }
@@ -539,7 +463,7 @@ header{
     width: 100%;
     height: 667px;
     left: 0px;
-    top: 2001px;
+    top: 1924px;
 
     background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
 }
@@ -588,14 +512,18 @@ header{
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+
+
+
 /* FOOTER */
+
 
 .footer{
     position: absolute;
     width: 100%;
     height: 287px;
     left: 0px;
-    top: 2668px;
+    top: 2591px;
 
     background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
 }
@@ -633,6 +561,14 @@ header{
 
     color: #FFFFFF;
 }
+
+
+
+
+
+
+
+
 
 
 /* OUR STAFF HTML */
@@ -683,10 +619,6 @@ header{
     border-radius: 0px 20px 20px 0px;
     background: url('../media/service.jpg');
 
-}
-
-.main{
-    background: linear-gradient(90deg, #14213D 27.6%, #36569C 100%);
 }
 
 .contact_main{
@@ -937,88 +869,64 @@ header{
 
 }
 
-/* responsive */
 
-@media screen and (min-width: 320px) {
-    #main {
-        width: 100%;
-        height: 600px;
+
+
+
+/* RESPONSIVE */
+
+nav{
+    grid-area: nav;
+}
+header{
+    grid-area: header;
+}
+section#maincontent{
+    grid-area: maincontent;
+}
+section#hardwareproducts{
+    grid-area: hardwareproducts;
+}
+section#softwareproducts{
+    grid-area: softwareproducts;
+}
+footer{
+    grid-area: footer;
+}
+
+
+#main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
+}
+
+
+
+@media screen and (min-width: 320px){
+    #main{
         display: grid;
-        grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
-        grid-template-rows: auto;
         grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
     }
-    #hardware_grid{
-        display: grid;
-        grid-template-areas: 'h_product1 h_product2 h_product6' 'h_product1 h_product3 h_product6''h_product1 h_product4 h_product6' 'h_product1 h_product5 h_product6';
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 150px 100px 100px 150px;
-        color: #000000;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 100px; 
-        margin-right: 25px;
-        margin-left: 25px;
-        /* text-align: center; */
-        text-align: center;
-    }
-    #software_grid{
-        display: grid;
-        grid-template-areas: 's_product1 s_product2 s_product6' 's_product1 s_product3 s_product6''s_product1 s_product4 s_product6' 's_product1 s_product5 s_product6';
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 150px 100px 100px 150px;
-        color: #000000;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 100px; 
-        margin-right: 25px;
-        margin-left: 25px;
-        /* text-align: center; */
-        text-align: center;
+    nav{
+        display: none;
     }
 }
 
 
 
 
-
-
-
-@media screen and (min-width: 1200px) {
-    #main {
-        width: 100%;
-        height: 600px;
+@media screen and (min-width: 1200px){
+    #main{
         display: grid;
-        grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
-        grid-template-rows: auto;
         grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
     }
-    #hardware_grid{
-        display: grid;
-        grid-template-areas: 'h_product1 h_product2 h_product6' 'h_product1 h_product3 h_product6''h_product1 h_product4 h_product6' 'h_product1 h_product5 h_product6';
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 150px 100px 100px 150px;
-        color: #000000;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 100px; 
-        margin-right: 25px;
-        margin-left: 25px;
-        /* text-align: center; */
-        text-align: center;
-    }
-    #software_grid{
-        display: grid;
-        grid-template-areas: 's_product1 s_product2 s_product6' 's_product1 s_product3 s_product6''s_product1 s_product4 s_product6' 's_product1 s_product5 s_product6';
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 150px 100px 100px 150px;
-        color: #000000;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 100px; 
-        margin-right: 25px;
-        margin-left: 25px;
-        /* text-align: center; */
-        text-align: center;
+    nav{
+        display: block;
     }
 }
