@@ -215,143 +215,22 @@
 
 
 
-/* HEADER ANTIGUO, MAL HECH */
-/* .masthead{
-    display: grid;
-    grid-template-columns: 47% 53%;
-}
-
-
-.grid_form{
-    background-image: url(../media/30.jpg);
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-
-.title{
-    position: absolute;
-    width: 349px;
-    height: 264px;
-    left: 123px;
-    top: 191px;
-
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 60px;
-    letter-spacing: 0.445em;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px #000000;
-}
-.title sup{
-    color: #FCA311;
-    font-weight: bold;
-}
-
-
-
-.header_form{
-    display: grid;
-    grid-template-rows: 50% 50%;
-    justify-content: center;
-    justify-items: center;
-    margin-top: 25%;
-    text-align: center;
-}
-
-form{
-    margin-top: -10%;
-}
-
-
-#index_form_title{
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.1em;
-    z-index: 1;
-    color: #000000;
-    text-decoration: underline;
-    text-decoration-color: #FCA311;
-    
-}
-
-#form_username{
-    position: absolute;
-    width: 232px;
-    height: 35px;
-    margin-left: -8%;
-    text-align: center;
-    background: #D9D9D9;
-    border-radius: 23px;
-    border: 0;
-}
-#form_password{
-    position: absolute;
-    width: 232px;
-    height: 35px;
-    margin-top: 25px;
-    margin-left: -8%;
-    text-align: center;
-    background: #D9D9D9;
-    border-radius: 23px;
-    border: 0;
-}
-#form_login{
-    position: absolute;
-    width: 105px;
-    height: 35px;
-    margin-top: 4%;
-    margin-left: -3.5%;
-    background: #14213D;
-    border-radius: 218px;
-    border: 0;
-    color:#FFFFFF;
-}
-#form_register{
-    position: absolute;
-    width: 131px;
-    height: 22px;
-    margin-top: 6%;
-    margin-left: -4%;
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration-line: underline;
-
-    color: #FCA311;
-    border: 0;
-    
-} */
-/* HEADER ANTIGUO, MAL HECH */
 
 /* MAIN BIEN HECHO */
 
 /* section, .main_1{
-    background: linear-gradient(120.75deg, #14213D 48.17%, #36569C 97.66%);
+    background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
     height: 587px;
     font-family: 'Gothic A1', sans-serif;
-}
+} */
 
 .content_main{
     display: flex;
     flex-direction: row;
-    height: 587px;
+    height: 722px;
     letter-spacing: 0.445em;
     line-height: 3rem;
+    font-family: "Gothic A1", sans-serif;
 }
 .aside_main_content h2 sup1{
     font-weight: bolder;
@@ -429,153 +308,7 @@ form{
     border: none;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-
-
-
-
-
-
-
-
-
-
-/* .main_1{
-    background: linear-gradient(120.75deg, #14213D 48.17%, #36569C 97.66%);
-    height: 590px;
 }
-
-.content_main{
-    display: grid;
-    grid-template-columns: 50% 50%;
-
-}
-
-.main_index_img{
-    width: 500px;
-    display: flex;
-    justify-self: end;
-    margin-top: 25px;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-
-.aside_main_content{
-    background-color: white;
-    margin-top: 25px ;
-    width: 500px;
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas: 'main_title main_title' 'main_subtitle main_subtitle' 'hardware_topic software_topic' 'none none';
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 50% 25% 25%;
-    text-decoration: none;
-}
-
-.main_title{
-    grid-area: main_title;
-    width: 500px;
-    height: 202px;
-    top: 25px;
-
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 40px;
-    line-height: 175.5%;
-
-    text-align: center;
-    letter-spacing: 0.155em;
-
-    color: #000000;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-
-
-}
-.main_title sup1 {
-    color: #FF9E00;
-    font-weight: bold;
-}
-.main_subtitle{
-    grid-area: main_subtitle;
-    width: 500px;
-    height: 47px;
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 26px;
-    line-height: 110%;
-    z-index: 1;
-    text-align: center;
-    letter-spacing: 0.145em;
-
-    color: #000000;
-}
-.hardware_topic{
-    grid-area: hardware_topic;
-    border: 1px solid black;
-    width: 150px;
-    height: 100px;
-    left: 620px;
-    top: 310px;
-    align-items: center;
-    justify-items: center;
-    background: #14213D;
-    border-radius: 22px;
-}
-.hardware_topic h3{
-    text-decoration: none;
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 110%;
-    margin-top: 2rem;
-
-    text-align: center;
-    letter-spacing: 0.045em;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.software_topic{
-    grid-area: software_topic;
-    width: 150px;
-    height: 100px;
-    left: 920px;
-    top: 310px;
-    align-items: center;
-    justify-items: center;
-    background: #FCA311;
-    border-radius: 22px;
-}
-.software_topic h3{
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 32px;
-    line-height: 110%;
-    margin-top: 2rem;
-    text-align: center;
-    letter-spacing: 0.045em;
-
-    color: #FFFFFF;
-    align-content: center;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-} */
-
-
 
 
 .main_2{
@@ -747,6 +480,71 @@ form{
 }
 
 
+.footer_index{
+    position: absolute;
+    width: 100%;
+    height: 287px;
+    left: 0px;
+    top: 2841px;
+
+    background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+}
+.footer_index h1{
+    position: absolute;
+    width: 229px;
+    height: 80px;
+    left: 63px;
+    top: 22px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.14em;
+
+    color: #FCA311;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer_index p{
+    position: absolute;
+    width: 264px;
+    height: 25px;
+    left: 62px;
+    top: 119px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* FOOTER */
 
@@ -805,66 +603,276 @@ form{
 
 
 /* OUR STAFF HTML */
-.masthead_our_staff{
-    position: absolute;
+.our_staff_header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 667px;
-    left: 0px;
-    top: 0px;
-
-    background: linear-gradient(90deg, #14213D 27.6%, #36569C 100%);
+    padding-top: 20px;
+    height: 950px;
 }
-.container_our_staff{
-    position: absolute;
-    width: 1306px;
-    height: 550px;
-    left: 20px;
-    top: 94px;
 
-    background: #FFFFFF;
+.our_staff_container{
+    display: grid;
+    grid-template-columns: 32% 36% 32%;
+    grid-template-rows: 100%;
+    background-color: #FFFFFF;
+    width: 1308px;
+    height: 570px;
+    margin-top: 80px;
     border-radius: 20px;
 }
+
 .our_devp{
-    position: absolute;
-    width: 438px;
-    height: 550px;
-    left: 0px;
-    top: 0px;
 
     background: url('../media/meeting-of-developers.jpg');
     border-radius: 20px 0px 0px 20px;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
 }
 .our_soft_devp{
-    position: absolute;
-    width: 438px;
-    height: 550px;
-    left: 438px;
-    top: 0px;
-
     background: url('../media/software\ develp.jpg');
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
 }
-.service{
-    position: absolute;
-    width: 438px;
-    height: 550px;
-    left: 876px;
-    top: 0px;
+.our_services{
     border-radius: 0px 20px 20px 0px;
     background: url('../media/service.jpg');
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
 
+} 
+
+.footer_op_os{
+    position: absolute;
+    width: 100%;
+    height: 287px;
+    left: 0px;
+    top: 742px;
+
+    background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+}
+.footer_op_os h1{
+    position: absolute;
+    width: 229px;
+    height: 80px;
+    left: 63px;
+    top: 22px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.14em;
+
+    color: #FCA311;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer_op_os p{
+    position: absolute;
+    width: 264px;
+    height: 25px;
+    left: 62px;
+    top: 119px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+
+    color: #FFFFFF;
 }
 
-.contact_main{
-    position: absolute;
-    width: 587px;
-    height: 464px;
-    left: 92px;
-    top: 150px;
 
-    background: url('../media/contact.jpg');
-    border-radius: 5px;
+/* SUPPORT */
+
+
+.masthead_support{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+    height: 661px;
+    width: 100%;
+    background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
+}
+.contact_main{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.contact_img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../media/john-schnobrich-FlPc9_VocJ4-unsplash\ \(2\).jpg');
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+
+}
+.div_contact_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 .contact_form{
+    display: flex;
+    flex-direction: column;
+    width: 404px;
+    height: 396px;
+    background: #FFFFFF;
+    border-radius: 7px 7px 0px 0px;
+}
+.contact_logo{
+    width: 404px;
+    height: 155px;
+    left: 750px;
+    top: 0px;
+
+    background: #14213D;
+    border-radius: 5px 5px 0px 0px;
+}
+.contact_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 404px;
+    height: 68px;
+    left: 750px;
+    top: 390px;
+
+    background: #FCA311;
+}
+.contact_button a{
+    width: 309px;
+    height: 23px;
+    left: 50px;
+    top: 20px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.07em;
+
+    color: #FFFFFF;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#contact_form_name{
+    width: 344px;
+    height: 57px;
+    left: 25px;
+    top: 180px;
+    font-size: 26px;
+    text-indent: 15px;
+    background: #D9D9D9;
+    border-radius: 3px;
+    border: none;
+}
+#contact_form_mail{
+    width: 344px;
+    height: 57px;
+    left: 25px;
+    top: 260px;
+    font-size: 26px;
+    text-indent: 15px;
+    background: #D9D9D9;
+    border-radius: 3px;
+    border: none;
+}
+.form_inputs{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_op_support{
+    position: absolute;
+    width: 100%;
+    height: 287px;
+    left: 0px;
+    top: 741px;
+
+    background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+}
+.footer_op_support h1{
+    position: absolute;
+    width: 229px;
+    height: 80px;
+    left: 63px;
+    top: 22px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.14em;
+
+    color: #FCA311;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer_op_support p{
+    position: absolute;
+    width: 264px;
+    height: 25px;
+    left: 62px;
+    top: 119px;
+
+    font-family: 'Gothic A1';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+
+    color: #FFFFFF;
+}
+
+
+
+
+/* .contact_form{
     position: absolute;
     width: 404px;
     height: 396px;
@@ -934,7 +942,23 @@ form{
     background: #D9D9D9;
     border-radius: 3px;
     border: none;
-}
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container_our_staff{
     display: grid;
@@ -965,7 +989,7 @@ form{
     width: 100%;
     height: 287px;
     left: 0px;
-    top: 667px;
+    top: 720px;
 
     background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
 }
@@ -1087,41 +1111,67 @@ form{
 }
 
 /* ABOUT HTML */
+.masthead_about{
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    height: 661px;
+    width: 100%;
+}
 
-.about_content h1{
+.about_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    color: #FFFFFF;
+    font-family: "Gothic A1",sans-serif;
+}
+
+
+.footer_op_about{
     position: absolute;
-    width: 232px;
-    height: 48px;
-    left: 567px;
-    top: 137px;
+    width: 100%;
+    height: 287px;
+    left: 0px;
+    top: 741px;
+
+    background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+}
+.footer_op_about h1{
+    position: absolute;
+    width: 229px;
+    height: 80px;
+    left: 63px;
+    top: 22px;
 
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
-    line-height: 45px;
+    font-size: 32px;
+    line-height: 40px;
     letter-spacing: 0.14em;
 
-    color: #FFFFFF;
+    color: #FCA311;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.about_content p{
+.footer_op_about p{
     position: absolute;
-    width: 1244px;
-    height: 373px;
+    width: 264px;
+    height: 25px;
     left: 62px;
-    top: 234px;
+    top: 119px;
 
     font-family: 'Gothic A1';
     font-style: normal;
     font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 13px;
+    line-height: 16px;
     letter-spacing: 0.14em;
 
     color: #FFFFFF;
-
 }
 
 
@@ -1447,6 +1497,91 @@ footer{
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
     
+
+
+
+
+
+
+    /* OUR STAFF */
+    .our_staff_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding-top: 80px;
+        height: 722px;
+    }
+    
+    .our_staff_container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 32% 36% 32%;
+        background-color: #FFFFFF;
+        width: 1308px;
+        height: 570px;
+        
+    }
+    .our_staff_header h1{
+        margin-top: -600px;
+        display: block;
+        position: absolute;
+        font-family: "Gothic A1", sans-serif;
+        color: #FFFFFF;
+        font-weight: 400;
+
+    }
+    .our_devp, .our_soft_devp, .our_services{
+        border-radius: 0px;
+    }
+
+
+
+
+
+    
+    .masthead_support{  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 80px;
+        height: 1000px;
+        width: 100%;
+        background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
+    }
+    .contact_main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 1000px;
+        border: 1px solid white;
+    }
+    .contact_img{
+        display: flex;
+        
+        justify-content: center;
+        align-items: center;    
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important
+        
+    }
+    .footer_op_support{
+        position: absolute;
+        width: 100%;
+        height: 287px;
+        left: 0px;
+        top: 1079px;
+    
+        background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+    }
 }
 
 
@@ -1489,8 +1624,7 @@ footer{
     header{
         background-color: #14213D;
         width: 100%;
-        padding-top: 62px;
-        height: 587px;
+        height: 722px;
         display: grid;
         grid-template-columns: 47% 53%;
     }
@@ -1613,5 +1747,87 @@ footer{
     .header_form #form_register{
         text-decoration: none;
         color: #FCA311;
+    }
+    /* MAIN 2 */
+    .main_2{
+        width: 100%;
+        height: 667px;
+        left: 0px;
+    
+        background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
+    }
+    #hardware_grid{
+        display: grid;
+        grid-template-areas: 'h_product1 h_product2 h_product6' 'h_product1 h_product3 h_product6''h_product1 h_product4 h_product6' 'h_product1 h_product5 h_product6';
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 150px 100px 100px 150px;
+        color: #000000;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-top: 100px; 
+        margin-right: 25px;
+        margin-left: 25px;
+        /* text-align: center; */
+        text-align: center;
+    }
+    /* MAIN 3 */
+    .main_3{
+        position: absolute;
+        width: 100%;
+        height: 770px;
+        left: 0px;
+        top: 2100px;
+    
+        background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
+    }
+    #software_grid{
+        display: grid;
+        grid-template-areas: 's_product1 s_product2 s_product6' 's_product1 s_product3 s_product6''s_product1 s_product4 s_product6' 's_product1 s_product5 s_product6';
+        grid-template-columns: 20% auto 20%;
+        grid-template-rows: 150px 100px 100px 150px;
+        color: #000000;
+        column-gap: 10px;
+        row-gap: 10px;
+        margin-top: 100px; 
+        margin-right: 25px;
+        margin-left: 25px;
+        /* text-align: center; */
+        text-align: center;
+    }
+    /* FOOTER */
+    .footer{
+        position: absolute;
+        width: 100%;
+        height: 287px;
+        left: 0px;
+        top: 2590px;
+    
+        background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+    }
+
+
+
+    /* OUR STAFF */
+    .our_staff_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        height: 722px;
+    }
+    
+    .our_staff_container{
+        display: grid;
+        grid-template-columns: 32% 36% 32%;
+        grid-template-rows: 100%;
+        background-color: #FFFFFF;
+        width: 1308px;
+        height: 570px;
+        margin-top: 80px;
+        border-radius: 20px;
+    }
+    .our_staff_header h1{
+        display: none;
     }
 }
