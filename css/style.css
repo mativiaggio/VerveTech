@@ -102,147 +102,6 @@ nav, suptitle2{
     background-color: rgba(252, 163, 17, 0.8);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .navbar{
-    display: flex;
-    position: fixed;
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    z-index: 2;
-    font-family: 'Gothic A1', sans-serif;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-.navbar_items{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 31px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    text-decoration: none;
-}
-.navbar_menu{
-    display: flex;
-    list-style: none;
-    text-decoration: none;
-    justify-content: space-between;
-    width: 100%;
-}
-.navbar_ls_buttons{
-    list-style: none;
-}
-.navbar_ls_buttons a{
-    text-decoration: none;
-    color: white;
-
-}
-.navbar_items a{
-    text-decoration: none;
-    color: #000000;
-}
-.nav_buttons{
-    padding-right: 70px;
-}
-#sign_up_button{
-    color:#000000
-}
-.logo{
-    margin-left: 20px;
-
-    color: #000000;
-
-    margin-right: 20px;
-}
-.logo a{
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
-}
-.search{
-    width: 365px;
-    height: 27px;
-    left: 167px;
-    margin-top: -20px;
-    text-indent: 10px;
-    background: #D8D8D8;
-    border-radius: 107px;
-    border: 0;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HEADER BIEN HECHO PUESTO EN @MEDIA */
 
 /* header{
@@ -1539,7 +1398,10 @@ footer{
     }
 
 
-    nav .nav_buttons{
+    nav .nav__links{
+        display: none;
+    }
+    nav .l_button, .s_button{
         display: none;
     }
 
