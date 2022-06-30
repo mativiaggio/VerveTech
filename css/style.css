@@ -338,6 +338,98 @@ form{
 } */
 /* HEADER ANTIGUO, MAL HECH */
 
+/* MAIN BIEN HECHO */
+
+/* section, .main_1{
+    background: linear-gradient(120.75deg, #14213D 48.17%, #36569C 97.66%);
+    height: 587px;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.content_main{
+    display: flex;
+    flex-direction: row;
+    height: 587px;
+    letter-spacing: 0.445em;
+    line-height: 3rem;
+}
+.aside_main_content h2 sup1{
+    font-weight: bolder;
+    color: #FCA311;
+}
+
+.main_image{
+    background-color: #000000;
+    width: 50%;
+    background-image: url(../media/christopher-gower-m_HRfLhgABo-unsplash\ \(1\).jpg);
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+}
+.aside_main_content{
+    background-color: #FFFFFF;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.main_subtitle{
+    margin-top: 50px;
+}
+
+.main_buttons{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+.main_buttons, .hardware_topic a{
+    text-decoration: none;
+    color: #FFFFFF;
+    letter-spacing: 0.445em;
+}
+.main_buttons, .software_topic a{
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 0.445em;  
+}
+
+.hardware_topic{
+    margin-right: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    height: 80px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #14213D;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.software_topic{
+    margin-left: 25px;
+    text-decoration: none;
+    display: inline-flex;
+    height: 80px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FCA311;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
 
 
 
@@ -348,9 +440,7 @@ form{
 
 
 
-
-
-.main_1{
+/* .main_1{
     background: linear-gradient(120.75deg, #14213D 48.17%, #36569C 97.66%);
     height: 590px;
 }
@@ -400,7 +490,6 @@ form{
     font-weight: 300;
     font-size: 40px;
     line-height: 175.5%;
-    /* or 70px */
 
     text-align: center;
     letter-spacing: 0.155em;
@@ -426,7 +515,6 @@ form{
     font-weight: 300;
     font-size: 26px;
     line-height: 110%;
-    /* or 35px */
     z-index: 1;
     text-align: center;
     letter-spacing: 0.145em;
@@ -436,7 +524,6 @@ form{
 .hardware_topic{
     grid-area: hardware_topic;
     border: 1px solid black;
-    /* position: absolute; */
     width: 150px;
     height: 100px;
     left: 620px;
@@ -454,7 +541,6 @@ form{
     font-size: 32px;
     line-height: 110%;
     margin-top: 2rem;
-    /* or 35px */
 
     text-align: center;
     letter-spacing: 0.045em;
@@ -480,7 +566,6 @@ form{
     font-weight: 300;
     font-size: 32px;
     line-height: 110%;
-    /* or 35px */
     margin-top: 2rem;
     text-align: center;
     letter-spacing: 0.045em;
@@ -488,7 +573,11 @@ form{
     color: #FFFFFF;
     align-content: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+} */
+
+
+
+
 .main_2{
     width: 100%;
     height: 667px;
@@ -1119,6 +1208,269 @@ footer{
 
 
 
+@media screen and (max-width: 813px){
+
+    #main{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, auto);
+        grid-template-areas: 'nav' 'header' 'maincontent' 'hardwareproducts' 'softwareproducts' 'footer';
+    }
+    
+    
+    nav .nav_buttons{
+        display: none;
+    }
+
+
+
+
+    /* HEADER */
+
+    header{
+        background-color: #14213D;
+        width: 100%;
+        padding-top: 80px;
+        height: 587px;
+        display: grid;
+    }
+
+
+
+    .grid_title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .grid_title .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid black; */
+    }
+
+
+    .title, #the,#vervetech, #company{
+        width: 349px;
+        height: 264px;
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-size: 43px;
+        line-height: 60px;
+        letter-spacing: 0.445em;
+
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px #000000;
+    }
+    .title #vervetech{
+        color: #FCA311;
+        font-weight: bold;
+    }
+
+
+
+
+
+
+
+    .grid_form{
+        background-image: url(../media/30.jpg);
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        z-index: auto;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+    }
+
+    .grid_form, .header_form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header_form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_form form{
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header_form h2{
+        font-family: 'Gothic A1';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        letter-spacing: 0.1em;
+        color: #000000;
+        text-decoration: underline;
+        text-decoration-color: #FCA311;
+        text-align: center;
+
+    }
+
+    .header_form #form_username{
+        width: 232px;
+        height: 35px;
+        text-align: center;
+        background: #D9D9D9;
+        border-radius: 23px;
+        border: 0;
+        margin-top: 5px;
+    }
+
+    .header_form #form_password{
+        width: 232px;
+        height: 35px;
+        text-align: center;
+        background: #D9D9D9;
+        border-radius: 23px;
+        border: 0;
+        margin-top: 5px;
+    }
+
+    .header_form #form_login{
+        width: 105px;
+        height: 35px;
+        background: #14213D;
+        border-radius: 218px;
+        border: 0;
+        color:#FFFFFF;
+        margin-top: 10px;
+    }
+
+    .header_form #form_register{
+        text-decoration: none;
+        color: #FCA311;
+    }
+
+    /* MAIN 1 */
+
+
+    section, .main_1{
+        background: linear-gradient(120.75deg, #14213D 48.17%, #36569C 97.66%);
+        height: 587px;
+        font-family: 'Gothic A1', sans-serif;
+        
+    }
+    
+    .content_main{
+        height: 587px;
+        letter-spacing: 0.445em;
+        line-height: 3rem;
+    }
+    .aside_main_content h2 sup1{
+        font-weight: bolder;
+        color: #FCA311;
+    }
+    
+    .main_image{
+        background-color: #000000;
+        width: 100%;
+        background-image: url(../media/christopher-gower-m_HRfLhgABo-unsplash\ \(1\).jpg);
+        background-repeat: no-repeat !important;
+        background-attachment: scroll !important;
+        background-position: center center !important;
+        background-size: cover !important;
+        -webkit-background-size: cover !important;
+        -moz-background-size: cover !important;
+        -o-background-size: cover !important;
+    }
+    .aside_main_content{
+        background-color: #FFFFFF;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .main_subtitle{
+        margin-top: 50px;
+    }
+    
+    .main_buttons{
+        display: flex;
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    
+    .main_buttons, .hardware_topic a{
+        text-decoration: none;
+        color: #FFFFFF;
+        letter-spacing: 0.445em;
+    }
+    .main_buttons, .software_topic a{
+        text-decoration: none;
+        color: #000000;
+        letter-spacing: 0.445em;  
+    }
+    
+    .hardware_topic{
+        margin-right: 25px;
+        text-decoration: none;
+        display: inline-flex;
+        height: 80px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        background-color: #14213D;
+        color: #ffffff;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .software_topic{
+        margin-left: 25px;
+        text-decoration: none;
+        display: inline-flex;
+        height: 80px;
+        width: 200px;
+        justify-content: center;
+        align-items: center;
+        background-color: #FCA311;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width: 814px){
     #main{
         display: grid;
@@ -1137,7 +1489,7 @@ footer{
     header{
         background-color: #14213D;
         width: 100%;
-        padding-top: 80px;
+        padding-top: 62px;
         height: 587px;
         display: grid;
         grid-template-columns: 47% 53%;
@@ -1261,40 +1613,5 @@ footer{
     .header_form #form_register{
         text-decoration: none;
         color: #FCA311;
-    }
-
-
-
-
-
-
-    #hardware_grid{
-        display: grid;
-        grid-template-areas: 'h_product1 h_product2 h_product6' 'h_product1 h_product3 h_product6''h_product1 h_product4 h_product6' 'h_product1 h_product5 h_product6';
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 150px 100px 100px 150px;
-        color: #000000;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 100px; 
-        margin-right: 25px;
-        margin-left: 25px;
-        /* text-align: center; */
-        text-align: center;
-    }
-    
-    #software_grid{
-        display: grid;
-        grid-template-areas: 's_product1 s_product2 s_product6' 's_product1 s_product3 s_product6''s_product1 s_product4 s_product6' 's_product1 s_product5 s_product6';
-        grid-template-columns: 20% auto 20%;
-        grid-template-rows: 150px 100px 100px 150px;
-        color: #000000;
-        column-gap: 10px;
-        row-gap: 10px;
-        margin-top: 100px; 
-        margin-right: 25px;
-        margin-left: 25px;
-        /* text-align: center; */
-        text-align: center;
     }
 }
