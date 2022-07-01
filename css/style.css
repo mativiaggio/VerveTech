@@ -51,23 +51,29 @@ nav{
     height: 80px;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
+    transition: all 0.3s ease 0s;
 }
-
-
+nav li{
+    transition: all 0.8s ease 0s;
+}
+nav li:hover{
+    transform: rotateY(360deg);
+}
 .navbar, li, a{
     text-decoration: none;
     color: #000000;
 } 
 
 .logo{
-    
+    transition: all 0.3s ease 0s;
     cursor: pointer;
     margin-right: auto;
     font-weight: 600;
     font-size: 20px;
 }
-
+.logo:hover{
+    transform: rotate(-5deg);
+}
 nav, suptitle{
     color: #14213D;
 }
@@ -82,7 +88,11 @@ nav, suptitle2{
     height: 25px;
     text-indent: 10px;
     margin-right: auto;
-}   
+    transition: all 0.3s ease 0s;
+}
+.search:hover{
+    background-color: #FCA311;
+}
 
 
 
@@ -95,7 +105,13 @@ nav, suptitle2{
     padding: 0px 20px
 }
 
+.nav__links li a{
+    transition: all 0.3s ease 0s;
+}
 
+.nav__links li a:hover{
+    color: #FCA311;
+}
 
 .l_button{
     padding: 9px 25px;
@@ -103,7 +119,7 @@ nav, suptitle2{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    
+    transition: all 0.3s ease 0s;
     color: #FFFFFF;
     margin-right: 20px;
     margin-left: 20px;
@@ -114,11 +130,17 @@ nav, suptitle2{
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    
+    transition: all 0.3s ease 0s;
 
 }
 
+.l_button:hover{
+    background-color: rgba(25, 41, 77, 0.8);
+}
 
+.s_button:hover{
+    background-color: rgba(252, 163, 17, 0.8);
+}
 
 
 .masthead, .grid_form,.main_image, .aside_main_content, .main_2, .main_3{
@@ -725,7 +747,7 @@ nav, suptitle2{
     background: none;
     border: none;
     cursor: pointer;
-    
+    transition: all 500ms ease-out;
 }
 #od_img button, h3, p{
     opacity: 0;
@@ -733,7 +755,15 @@ nav, suptitle2{
     color: #FFFFFF;
     font-family: "Gothic A1", sans-serif;
 }
-
+#od_img button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px 0px 0px 20px;
+}
+#od_img button:hover, h3, p{
+    opacity: 1;
+    visibility: visible
+    
+}
 
 
 
@@ -755,7 +785,7 @@ nav, suptitle2{
     background: none;
     border: none;
     cursor: pointer;
-    
+    transition: all 500ms ease-out;
 }
 #osd_img button, h3, p{
     opacity: 0;
@@ -763,7 +793,14 @@ nav, suptitle2{
     color: #FFFFFF;
     font-family: "Gothic A1", sans-serif;
 }
-
+#osd_img button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#osd_img button:hover, h3, p{
+    opacity: 1;
+    visibility: visible
+    
+}
 
 
 
@@ -786,7 +823,7 @@ nav, suptitle2{
     background: none;
     border: none;
     cursor: pointer;
-    
+    transition: all 500ms ease-out;
 }
 #os_img button, h3, p{
     opacity: 0;
@@ -794,7 +831,15 @@ nav, suptitle2{
     color: #FFFFFF;
     font-family: "Gothic A1", sans-serif;
 }
-
+#os_img button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 0px 20px 20px 0px;
+}
+#os_img button:hover, h3, p{
+    opacity: 1;
+    visibility: visible
+    
+}
 
 
 
