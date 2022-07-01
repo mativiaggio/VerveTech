@@ -3,4 +3,4 @@
 
 #Problemas sin resolver:
 - La navbar no es responsive en el rango de 800px en adelante *RESUELTO*
-- El header del index.html no se ve bien en el rango 300px - 800px
+- El header del index.html no se ve bien en el rango 300px - 800px *RESUELTO*
