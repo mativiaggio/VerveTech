@@ -37,7 +37,11 @@ nav, .footer_index{
 
 
 
-nav{
+
+
+
+/* navbar sin bootstrap */
+/* nav{
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -140,8 +144,7 @@ nav, suptitle2{
 
 .s_button:hover{
     background-color: rgba(252, 163, 17, 0.8);
-}
-
+} */
 
 .masthead, .grid_form,.main_image, .aside_main_content, .main_2, .main_3{
     height: 590px;
@@ -152,8 +155,8 @@ nav, suptitle2{
 /* HEADER Y FORM HEADER */
 
 .masthead, .grid_form{
-    margin-top: 80px;
-    height: 588px;
+    /* margin-top: 5px; */
+    height: 620px;
 }
 
 
