@@ -6,10 +6,6 @@
     font-family: "Gothic A1", sans-serif;
 }
 /* NAVBAR */
-nav{
-    position: sticky-top;
-}
-
 .search{
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
