@@ -5,53 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verve Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <Label class="logo"><a href="../index.html"> <suptitle>VERVE</suptitle> <suptitle2>TECH</suptitle2>  </a></Label>
-        <input type="text" placeholder="SEARCH"  class="search">
-        <ul class="nav__links">
-            <li><a href="our_staff.html">OUR STAFF</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="support.html">SUPPORT</a></li>
-            <li><a href="faq.html">F.A.Q</a></li>
-        </ul>
-        <a class="cta" href="#"><button class="l_button">LOGIN</button></a>
-        <a class="cta" href="#"><button class="s_button">SIGNUP</button></a>
-    </nav>
-    <header class="masthead_support">
-        <div class="contact_main">
-            <div class="contact_img">
-                
-                <!-- <img src="../media/john-schnobrich-FlPc9_VocJ4-unsplash (2).jpg" alt=""> -->
-            </div>
-            <div class="div_contact_form">
-                <form action="" method="post">
-                    
-                    <div class="contact_form">
-                        <div class="contact_logo">
-                        
-                        </div>
-                        <div class="form_inputs">
-                            <input type="text" placeholder="Full name" id="contact_form_name"><br>
-                            <input type="mail" placeholder="Email" id="contact_form_mail">
-                        </div>
-                    </div>
-                    
-                    <div class="contact_button">
-                        <a href="#">ENTER CHAT SUPPORT</a>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </header>
-    <footer>
-        <div class="footer_op_support">
-            <h1>Verve <br> Tech</h1>
-            <p>©Copyright all rights reserved</p>
-        </div>
 
-    </footer>
+    <div class="support_gl">
+      
+      <div class="container-fluid support_navbar" style="grid-column:1/9;">
+        <div class="row">
+          <div class="col gx-0">
+            <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid" >
+                <a class="navbar-brand" href="../index.html">Verve Tech</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <form class="d-flex mx-auto search_container" role="search">
+                      <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success search_button" type="submit">Search</button>
+                  </form>
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav__links">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="our_staff.html">Our Staff</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="support.html"> Support</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="faq.html">F.A.Q</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                    </li>
+                    <li><button type="button" class="btn btn-primary l_button">Login</button></li>
+                    <li><button type="button" class="btn btn-primary s_button">Register</button></li>
+                  </ul>
+                </div>
+                
+              </div>
+          </nav>
+          </div>
+        </div>
+      </div>
+      <header class="masthead_support">
+          <div class="contact_main">
+              <div class="div_contact_form">
+                <form class="text-center">
+                  <div class="mb-3">
+                    <div class="mb-3">
+                      <label class="form-label">Full name</label>
+                      <input type="text" class="form-control">
+                    </div>
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input checkbox_support" id="exampleCheck1">
+                    <label class="form-check-label text-start" for="exampleCheck1">By ticking, you are confirming that you have read, understood and agree to <a href="#">Verve Tech terms and conditions</a> </label>
+                  </div>
+                  <button type="submit" class="btn btn-primary support_form_button">Enter Chat</button>
+                </form>
+              </div>
+          </div> 
+      </header>
+      <footer class="footer_op_support">
+          <div>
+              <h1>Verve <br> Tech</h1>
+              <p>©Copyright all rights reserved</p>
+          </div>
+  
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

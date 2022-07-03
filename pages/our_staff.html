@@ -5,49 +5,97 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Verve Tech</title>
+     <!-- BOOTSTRAP -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
-    <nav>
-        <Label class="logo"><a href="../index.html"> <suptitle>VERVE</suptitle> <suptitle2>TECH</suptitle2>  </a></Label>
-        <input type="text" placeholder="SEARCH"  class="search">
-        <ul class="nav__links">
-            <li><a href="our_staff.html">OUR STAFF</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="support.html">SUPPORT</a></li>
-            <li><a href="faq.html">F.A.Q</a></li>
-        </ul>
-        <a class="cta" href="#"><button class="l_button">LOGIN</button></a>
-        <a class="cta" href="#"><button class="s_button">SIGNUP</button></a>
-    </nav>
-
-
-
-    <header class="os_header">
-        <div class="os_container">
-            <a class="cta" href="#our_developers" id="od_img"><button>
-                <h3>Our Developers</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dignissimos, ipsa laboriosam doloribus quis voluptatum voluptatem velit a cumque modi! Dolore doloremque architecto velit aliquam dignissimos aut culpa eos saepe.</p>
-            </button></a>
-            <a class="cta" href="#our_software_developers" id="osd_img"><button>
-                <h3>Our Software Developers</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat architecto nam voluptatibus accusamus facilis nihil voluptate quisquam tenetur distinctio dolorum. Quas ab voluptates autem eaque vitae quod omnis quos earum.</p>
-            </button></a>
-            <a class="cta" href="#our_services" id="os_img"><button>
-                <h3>Our Services</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, iste! Minus quae recusandae exercitationem laudantium molestias, repudiandae culpa aliquid eaque quibusdam voluptas voluptatem soluta ullam! Sit quaerat officia dolores. Distinctio?</p>
-            </button></a>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col gx-0">
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid" >
+              <a class="navbar-brand" href="../index.html">Verve Tech</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <form class="d-flex mx-auto search_container" role="search">
+                    <input class="form-control me-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success search_button" type="submit">Search</button>
+                </form>
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 nav__links">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="our_staff.html">Our Staff</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="support.html"> Support</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="faq.html">F.A.Q</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                  </li>
+                  <li><button type="button" class="btn btn-primary l_button">Login</button></li>
+                  <li><button type="button" class="btn btn-primary s_button">Register</button></li>
+                </ul>
+              </div>
+              
+            </div>
+        </nav>
         </div>
-    </header>
-    
-    
-    
-    <footer>
-        <div class="footer_op_os">
-            <h1>Verve <br> Tech</h1>
-            <p>©Copyright all rights reserved</p>
-        </div>
+      </div>
 
-    </footer>
+
+    <div class="row os_header">
+      <div class="col-lg-4 card1">
+        <div class="card text-center" style="width: 18rem;">
+        <img class="card-img-top od_img">
+        <div class="card-body">
+          <h5 class="card-title"">Our Web Developers</h5>
+          <p class="card-text" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsum veritatis repellendus.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+      <div class="col-lg-4 card2">
+        <div class="card text-center" style="width: 18rem;">
+          <img class="card-img-top osd_img">
+          <div class="card-body">
+            <h5 class="card-title">Our Software Developers</h5>
+            <p class="card-text" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsum veritatis repellendus.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 card3">
+        <div class="card text-center" style="width: 18rem;">
+          <img class="card-img-top os_img">
+          <div class="card-body">
+            <h5 class="card-title">Our Services</h5>
+            <p class="card-text" style="color: black;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ipsum veritatis repellendus.</p>
+            <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <div class="row">
+      <div class="col gx-0" >
+        <footer>
+          <div class="footer_op_os" style="height: 287px">
+              <h1>Verve <br> Tech</h1>
+              <p>©Copyright all rights reserved</p>
+          </div>
+  
+      </footer>
+      </div>
+    </div>
+    </div>
+     <!-- BOOTSTRAP -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
