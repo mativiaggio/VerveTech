@@ -6,6 +6,10 @@
     font-family: "Gothic A1", sans-serif;
 }
 /* NAVBAR */
+nav{
+    position: sticky-top;
+}
+
 .search{
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -466,8 +470,16 @@
 }
 .masthead_about{
     grid-column: 1/10;
-    height: 590px;
-    background: linear-gradient(90deg, #14213D 28.77%, #36569C 100%);
+    height: 611px;
+    background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../media/about_background.jpg") no-repeat center center fixed;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-position: center center !important;
+    z-index: auto;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
     font-family: "Gothic A1", sans-serif;
 }
 .about_content{
@@ -475,12 +487,78 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px 20px;
+    height: 100%;
+    width: 100%;
+}
+.about_card_1, .about_card_2, .about_card_3, .about_card_4, .about_card_5, .about_card_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.about_first_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px){
+    .masthead_about{
+        height: 1370px;
+    }
+
+    .about_first_row{
+        margin-bottom: -20px;
+    }
+    .about_first_row > *{
+        margin-bottom: 20px;
+    }
+    .about_second_row{
+        margin-top: 20px;
+    }
+    .about_second_row > *{
+        margin-bottom: 20px;
+    }
+}
+.footer_about{
+    grid-column: 1/10;
+    width: 100%;
+    height: 287px;
+
+    background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
+}
+.footer_about h1{
+    margin-left: 15px;
+    width: 229px;
+    height: 80px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 0.14em;
+
+    color: #FCA311;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.footer_about p{
+    margin-left: 15px;
+    width: 264px;
+    height: 25px;
+    font-family: 'Gothic A1', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    letter-spacing: 0.14em;
+
     color: #FFFFFF;
 }
-.about_content p{
-    text-indent: 30px;
-}
+
+
+
 /* FOOTER */
 .footer{
     position: absolute;
