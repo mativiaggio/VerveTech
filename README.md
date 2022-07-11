@@ -16,3 +16,4 @@
     - about.html: Esta pagina es muy especial, ya que hace uso y convina LOS DOS tipos de grillas, se utiliza el grid layout clasico con media querys para maquetar los elementos padre de la pagina, mientras que se usa el grid de bootstrap para posicionar correctamente las card (tambien de bootstrap) en el header, haciendo uso de div.container div.row y div.col de manera correcta.
 
     **Tambien se utilizo _flexbox_ y _box-modeling_ en todas las paginas para terminar de acomodar y ajustar los elementos**
+
