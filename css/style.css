@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Tai+Heritage+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -9,8 +9,6 @@
 nav{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
-
 .search{
     border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 20px;
@@ -38,7 +36,6 @@ nav{
 .search_container{
     margin: 5px;
 }
-
 .nav-link{
     transition: all 0.5s ease 0s;
     border: 0.5px solid rgba(0, 0, 0, 0);
@@ -50,9 +47,10 @@ nav{
     background-color: #FCA311;
     
 }
-
-
-
+.nav-link:active{
+    background-color: #ffdca3;
+    border: 0.5px solid #ffdca3;
+}
 .l_button{
     border: none;
     background-color: #FCA311;
@@ -61,13 +59,13 @@ nav{
     transition: all 0.3s ease 0s;
     margin-top: 2px;
 }
-
 .l_button:hover{
     background-color: rgba(252,163,17, 0.8);
     color: #000000;
 }
-
-
+.l_button:active{
+    background-color: #ffdca3;
+}
 .s_button{
     border: none;
     background-color: #14213D;
@@ -76,10 +74,16 @@ nav{
     transition: all 0.3s ease 0s;
     margin-top: 2px;
 }
-
+.s_button a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
 .s_button:hover{
     background-color: rgba(20,33,61, 0.8);
     color: #ffffff;
+}
+.s_button:active{
+    background-color: #224591;
 }
 
 /* HEADER */
@@ -106,8 +110,6 @@ nav{
     flex-direction: column;
     justify-content: center;
 }
-
-
 .title, #the,#vervetech, #company{
     width: 349px;
     height: 264px;
@@ -124,11 +126,6 @@ nav{
     color: #FCA311;
     font-weight: bold;
 }
-
-
-
-
-
 #masthead_form_container{
     background-image: url(../media/30.jpg);
     background-repeat: no-repeat !important;
@@ -151,7 +148,6 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
 #index_form_title{
     font-family: "Gothic A1", sans-serif;
     font-style: normal;
@@ -165,7 +161,6 @@ nav{
     text-align: center;
 
 }
-
 #form_username{
     width: 232px;
     height: 35px;
@@ -175,7 +170,6 @@ nav{
     border: 0;
     margin-top: 5px;
 }
-
 #form_password{
     width: 232px;
     height: 35px;
@@ -185,7 +179,6 @@ nav{
     border: 0;
     margin-top: 5px;
 }
-
 #form_login{
     width: 105px;
     height: 35px;
@@ -194,14 +187,30 @@ nav{
     border: 0;
     color:#FFFFFF;
     margin-top: 10px;
+    transition: all 0.3s ease 0s;
 }
-
+#login_link{
+    text-decoration: none;
+    color: #000000;
+}
+#form_login:hover{
+    background: #FCA311;
+}
+#form_login:active{
+    background: #ffdca3;
+}
 #form_register{
     text-decoration: none;
     color: #FCA311;
+    transition: all 0.3s ease 0s
 }
-
-
+#form_register:hover{
+    color: #14213D;
+}
+#form_register:active{
+    color: #ff0800;
+    border-radius: 50px;
+}
 /* MAIN 1 */
 .img_container{
     background-color: #D9D9D9;
@@ -232,17 +241,14 @@ nav{
     font-family: "Gothic A1", sans-serif;
     height: 100%;
 }
-
 .main_subtitle{
     margin-top: 50px;
 }
-
 .main_buttons{
     display: flex;
     flex-direction: row;
     margin-top: 50px;
 }
-
 .main_buttons, .hardware_topic a{
     text-decoration: none;
     color: #FFFFFF;
@@ -253,7 +259,6 @@ nav{
     color: #000000;
     letter-spacing: 0.445em;
 }
-
 .hardware_topic{
     margin-right: 25px;
     text-decoration: none;
@@ -267,8 +272,17 @@ nav{
     border: none;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: bolder;
+    transition: all 0.3s ease 0s;
 }
-
+.hardware_topic:hover{
+    background-color: #1f3564;
+}
+.hardware_topic:active{
+    background-color: #155a7a;
+}
 .software_topic{
     margin-left: 25px;
     text-decoration: none;
@@ -281,16 +295,23 @@ nav{
     border: none;
     border-radius: 20px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 22px;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: bolder;
+    transition: all 0.3s ease 0s;
 }
-
-
+.software_topic:hover{
+    background-color: #fdc66d;
+}
+.software_topic:active{
+    background-color: #b16d00;
+}
 /* MAIN 2 */
 .main_2{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .h_product_1{
     background-image: url('../media/martin-katler-7wCxlBfGMdk-unsplash.jpg');
     background-repeat: no-repeat !important;
@@ -301,6 +322,7 @@ nav{
     -webkit-background-size: cover !important;
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
+    cursor: pointer;
 }
 .h_product_2{
     background-image: url('../media/olivier-collet-hLXTRAMuvBY-unsplash.jpg');
@@ -346,7 +368,6 @@ nav{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 }
-
 .h_product_6{
     background-image: url('../media/daniel-korpai-8GDCzWrcE3M-unsplash.jpg');
     background-repeat: no-repeat !important;
@@ -358,16 +379,12 @@ nav{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 }
-
-
-
 /* MAIN 3 */
 .main_3{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .s_product_1{
     background-image: url('../media/martin-katler-7wCxlBfGMdk-unsplash.jpg');
     background-repeat: no-repeat !important;
@@ -423,7 +440,6 @@ nav{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 }
-
 .s_product_6{
     background-image: url('../media/daniel-korpai-8GDCzWrcE3M-unsplash.jpg');
     background-repeat: no-repeat !important;
@@ -435,7 +451,6 @@ nav{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 }
-
 /* index FOOTER */
 .footer_index{
 
@@ -505,7 +520,6 @@ nav{
     align-items: center;
     margin-bottom: 20px;
 }
-
 @media screen and (max-width: 992px){
     .masthead_about{
         height: 1370px;
@@ -559,9 +573,6 @@ nav{
 
     color: #FFFFFF;
 }
-
-
-
 /* FOOTER */
 .footer{
     position: absolute;
@@ -620,8 +631,6 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
-
 .od_img{
     background-image: url('../media/meeting-of-developers.jpg');
     background-repeat: no-repeat !important;
@@ -658,7 +667,6 @@ nav{
     -o-background-size: cover !important;
     height: 225px;
 }
-
 .footer_op_os{
     background: linear-gradient(93.14deg, #000000 1.42%, #FFFFFF 119.14%);
 }
@@ -692,17 +700,11 @@ nav{
 
     color: #FFFFFF;
 }
-
 @media screen and (max-width: 991px){
     .os_header{
         height: 1300px;
     }
 }
-
-
-
-
-
 /* SUPPORT */
 .support_gl{
     display: grid;
@@ -731,7 +733,6 @@ nav{
     -moz-background-size: cover !important;
     -o-background-size: cover !important;
 }
-
 .footer_op_support{
     grid-column: 1/9;
 }
@@ -759,91 +760,6 @@ nav{
 .support_form_button:hover{
     background-color: #14213D;
 }
-
-/* .div_contact_form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
-.contact_form{
-    display: flex;
-    flex-direction: column;
-    width: 404px;
-    height: 396px;
-    background: #FFFFFF;
-    border-radius: 7px 7px 0px 0px;
-}
-.contact_logo{
-    width: 404px;
-    height: 155px;
-    left: 750px;
-    top: 0px;
-
-    background: #14213D;
-    border-radius: 5px 5px 0px 0px;
-}
-.contact_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 404px;
-    height: 68px;
-    left: 750px;
-    top: 390px;
-
-    background: #FCA311;
-}
-.contact_button a{
-    width: 309px;
-    height: 23px;
-    left: 50px;
-    top: 20px;
-
-    font-family: 'Gothic A1';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 24px;
-    line-height: 30px;
-    letter-spacing: 0.07em;
-
-    color: #FFFFFF;
-
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-#contact_form_name{
-    width: 344px;
-    height: 57px;
-    left: 25px;
-    top: 180px;
-    font-size: 26px;
-    text-indent: 15px;
-    background: #D9D9D9;
-    border-radius: 3px;
-    border: none;
-}
-#contact_form_mail{
-    width: 344px;
-    height: 57px;
-    left: 25px;
-    top: 260px;
-    font-size: 26px;
-    text-indent: 15px;
-    background: #D9D9D9;
-    border-radius: 3px;
-    border: none;
-}
-.form_inputs{
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-/* footer ya hecho */
-
-
 .footer_op_support{
     width: 100%;
     height: 287px;
@@ -881,7 +797,6 @@ nav{
 
     color: #FFFFFF;
 }
-
 /* MEDIA QUERY DE SUPPORT */
 @media screen and (max-width:1162px){
     .support_navbar{
@@ -926,9 +841,6 @@ nav{
     
     
 }
-
-
-
 @media screen and (max-width: 900px){
     .support_navbar{
         grid-column: 1/9;
@@ -953,9 +865,6 @@ nav{
         grid-row: 5/8;
     }
 }
-
-
-
 /* FOOTER one page*/
 .footer_op{
     position: absolute;
@@ -1052,8 +961,6 @@ nav{
     letter-spacing: 0.14em;
     color: #FFFFFF;
 }
-
-
 @media screen and (max-width: 991px){
     .masthead_faq{
         height: 890px;
@@ -1063,49 +970,89 @@ nav{
         margin-top: -100px;
     }
 }
+/* register.html */
 
+.register_header{
+    height: 667px;
+    background: linear-gradient(-45deg, #133C55, #386FA4, #59A5D8, #84D2F6, #91E5F6);
+    background-size: 400%, 400%;
+    position: relative;
+    animation: register_btn 5s ease-in-out infinite;
+    font-family: "Roboto",sans-serif;
+}
+.register_title{
+    margin-top: 15px;
+    width: 20%;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    border: 4px solid white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.register_title a{
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+}
+.register_form_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.register_form_container{
+    background: white;
+    height: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-family: "Roboto",sans-serif;
+    margin-top: -100px;
+}
+.register_form_container h1{
+    margin-top: -40px;
+    font-family: "Roboto",sans-serif;
+}
+.register_form{
+    width: 70%;
+    height: 70%;
+    font-family: "Roboto",sans-serif;
+}
+.register_btn{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 1px solid black;
+    border-radius: 50px;
+    transition: all 0.3s ease 0s;
+}
+.register_btn:hover{
+    background: linear-gradient(-45deg, #133C55, #386FA4, #59A5D8, #84D2F6, #91E5F6);
+    background-size: 400%, 400%;
+    position: relative;
+    animation: register_btn 3s ease-in-out infinite;
+    border: none;
+}
+.register_btn:active{
+    background-color: #91E5F6;
+}
+@keyframes register_btn{
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
 
-/* @media screen and (max-width: 813px){
-    .masthead_faq{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../media/faq_background.jpg") no-repeat center center fixed;
-        background-repeat: no-repeat !important;
-        background-attachment: scroll !important;
-        background-position: center center !important;
-        z-index: auto;
-        background-size: cover !important;
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover !important;
-        -o-background-size: cover !important;
-        font-family: "Gothic A1", sans-serif;
-        width: 100%;
-        height: 667px;
-        padding-top: 80px;
+}
+@media screen and (max-width:995px){
+    .register_title{
+        width: 35%;
     }
-    .faq_content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 95%;
-    }
-    .faq_content a{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-        width: 100%;
-        height: 80px;
-        border-radius: 5px;
-        border: 1px solid white;
-        background-color: #FFFFFF;
-        text-decoration: none;
-        text-align: center;
-    }
-    .cards_text{
-        font-size: 12px;
-    }
-} */
+}
