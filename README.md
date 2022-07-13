@@ -17,3 +17,11 @@
 
     **Tambien se utilizo _flexbox_ y _box-modeling_ en todas las paginas para terminar de acomodar y ajustar los elementos**
 
+# Registro segunda entrega proyecto final
+## Se implementaron, mejoraron y agregaron los siguientes items:
+
+    - Todos los html fueron ordenados, sin dejar espacios innecesarios.
+    - El styles.css fue ordenado, sin dejar espacios vacios y etiquetando cada seccion para que se sepa que parte del codigo se esta leyendo.
+    - Para que la entrega quede un poco mas completa, se elimino el grid del index donde habia una simulacion de una store y en cambio se creo el store.html. En esta pagina, la cual se accede desde el index por el momento, se encuentra debidamente ordenada, mediante grids de bootstrap y flexbox la tienda de la pagina. Se presto especial atencion a la utilizacion del recurso :hover y :active enseñado en la clase, por ejemplo, en el menu aside o en los botones de las tarjetas. Se tomo como referencia e inspiracion la pagina de mercadolibre.com y amazon.com para el aside.
+## Dudas de la entrega:
+    - En algunas ocaciones la pagina de store.html se traba o tiene bajones. Eso se debe a la alta resolucion de algunas imagenes? De ser asi, hay alguna forma de optimizarlo sin cambiar la resolucion? Es posible que sea mi computadora el problema (ya que es vieja)?
