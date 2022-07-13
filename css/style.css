@@ -1614,6 +1614,15 @@ supreviews{
     }
 }
 @media screen and (max-width:1199px){
+    .store_main{
+        height: 100%;
+        background-color: #FCFDFF;
+        
+    }
+    .aside_store{
+        background-color: #F7F8FA;
+        height: 5843px;
+    }
     .store_section_container{
         background-color: #F7F8FA;
     }
