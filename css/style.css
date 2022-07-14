@@ -1171,9 +1171,9 @@ nav {
   width: 100%;
 }
 .store_header .store_title {
-  font-family: "Cormorant SC", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 93px;
-  font-weight: lighter;
+  font-weight: bold;
   letter-spacing: 5px;
 }
 .store_header .store_buttons {
