@@ -24,4 +24,11 @@
     - El styles.css fue ordenado, sin dejar espacios vacios y etiquetando cada seccion para que se sepa que parte del codigo se esta leyendo.
     - Para que la entrega quede un poco mas completa, se elimino el grid del index donde habia una simulacion de una store y en cambio se creo el store.html. En esta pagina, la cual se accede desde el index por el momento, se encuentra debidamente ordenada, mediante grids de bootstrap y flexbox la tienda de la pagina. Se presto especial atencion a la utilizacion del recurso :hover y :active enseñado en la clase, por ejemplo, en el menu aside o en los botones de las tarjetas. Se tomo como referencia e inspiracion la pagina de mercadolibre.com y amazon.com para el aside.
 ## Dudas de la entrega:
+
     - En algunas ocaciones la pagina de store.html se traba o tiene bajones. Eso se debe a la alta resolucion de algunas imagenes? De ser asi, hay alguna forma de optimizarlo sin cambiar la resolucion? Es posible que sea mi computadora el problema (ya que es vieja)?
+
+# Registro de desafio SASS
+## El HTML utilizado se encuentra en pages/store.html
+
+    - Se modifico la escritura en la hoja de estilos .scss de manera que se escriba como lo permite SASS. Se utilizo el recurso &:hover y &:active; ademas se utilizaron las variables,  creando los archivos _colors.scss, _fonts.scss y _variables.scss.
+    Me hubiera gustado usar mas las variables, pero como venia escribiendo el codigo esto fue lo que pude implementar. En las paginas que siga creando (faltan algunas) voy a escribirlas utilizando solo sass y variables.
