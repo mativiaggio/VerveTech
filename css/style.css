@@ -1167,7 +1167,7 @@ nav {
   font-size: xx-large;
   text-decoration: line-through;
   text-decoration-thickness: 1px;
-  margin-left: 1%;
+  padding-left: 1%;
   width: 100%;
 }
 .store_header .store_title {
@@ -1175,9 +1175,10 @@ nav {
   font-size: 93px;
   font-weight: bold;
   letter-spacing: 5px;
+  padding-left: 1%;
 }
 .store_header .store_buttons {
-  margin-left: 1%;
+  padding-left: 1%;
   width: 100%;
 }
 .store_header .hardware_store_button {
