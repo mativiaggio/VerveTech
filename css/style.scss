@@ -5,6 +5,9 @@
 @import "variables";
 @import "colors";
 @import "fonts";
+@import "maps";
+@import "mixins";
+
 *{
     padding: 0;
     margin: 0;
@@ -109,11 +112,7 @@ nav{
     background-color: white;
 }
 .grid_title{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
+    @include flex-column-center-center;
 }
 .grid_title .title{
     display: flex;
@@ -138,25 +137,12 @@ nav{
 }
 #masthead_form_container{
     background-image: url(../media/30.jpg);
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include img_config(scroll);
+    @include flex-column-center-center;
     text-align: center;
 }
 .form{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
 }
 #index_form_title{
     font-family: $gothic;
@@ -227,14 +213,7 @@ nav{
     height: 100%;
     width: 100%;
     background-image: url('../media/christopher-gower-m_HRfLhgABo-unsplash (1).jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(scroll);
 }
 .aside_main_content h2 sup1{
     font-weight: bolder;
@@ -269,6 +248,11 @@ nav{
     color: #000000;
     letter-spacing: 0.445em;
 }
+@each $ibutton, $button_color in $index_buttons{
+    .#{$ibutton}{
+        background-color: $button_color;
+    }
+}
 .hardware_topic{
     margin-right: 25px;
     text-decoration: none;
@@ -277,7 +261,6 @@ nav{
     width: 200px;
     justify-content: center;
     align-items: center;
-    background-color: $main_color;
     color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -301,7 +284,6 @@ nav{
     width: 200px;
     justify-content: center;
     align-items: center;
-    background-color: $second_color;
     border: none;
     border-radius: 20px;
     box-shadow: $box_shadow;
@@ -316,226 +298,83 @@ nav{
 .software_topic:active{
     background-color: #b16d00;
 }
-/* MAIN 2 */
-.main_2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.h_product_1{
-    background-image: url('../media/martin-katler-7wCxlBfGMdk-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-    cursor: pointer;
-}
-.h_product_2{
-    background-image: url('../media/olivier-collet-hLXTRAMuvBY-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.h_product_3{
-    background-image: url('../media/slejven-djurakovic-0uXzoEzYZ4I-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.h_product_4{
-    background-image: url('../media/denny-muller-QZNi-ISiafg-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.h_product_5{
-    background-image: url('../media/syed-ali-Sdn4xM5TsIo-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.h_product_6{
-    background-image: url('../media/daniel-korpai-8GDCzWrcE3M-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-/* MAIN 3 */
-.main_3{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.s_product_1{
-    background-image: url('../media/martin-katler-7wCxlBfGMdk-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.s_product_2{
-    background-image: url('../media/olivier-collet-hLXTRAMuvBY-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.s_product_3{
-    background-image: url('../media/slejven-djurakovic-0uXzoEzYZ4I-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.s_product_4{
-    background-image: url('../media/denny-muller-QZNi-ISiafg-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.s_product_5{
-    background-image: url('../media/syed-ali-Sdn4xM5TsIo-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
-.s_product_6{
-    background-image: url('../media/daniel-korpai-8GDCzWrcE3M-unsplash.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
-}
 /* FOOTERS */
-.footer_index, .footer_about, .footer_op_faq, .footer_op_os, .footer_op_support{
-    background-color: #000000;
-    .container{
-        .row1{
-            height: 300px;
-            .index_footer_title{
-                h1 {
-                    margin-top: 10px;
-                    color: white;
-                    font-family: $gothic;
-                    text-decoration: underline;
-                    text-decoration-thickness: 2px;
-                    letter-spacing: 5px;
-                }
-            }
-            .index_footer_list{
-                ul {
-                    li {
-                        list-style: none;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            font-size: large;
-                            letter-spacing: 2px;
-                            transition: $transition_02s;
-                            &:hover{
-                                text-decoration: underline;
-                                text-decoration-color: white;
+@each $footer, $bg_color in $footer_bg{
+    .#{$footer}{
+        background-color: $bg_color;
+        .container{
+            .row1{
+                height: 300px;
+                .index_footer_title{
+                    h1 {
+                        margin-top: 10px;
+                        color: white;
+                        font-family: $gothic;
+                        text-decoration: underline;
+                        text-decoration-thickness: 2px;
+                        letter-spacing: 5px;
+                    }
+                } 
+                .index_footer_list{
+                    ul {
+                        li {
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-size: large;
+                                letter-spacing: 2px;
+                                transition: $transition_02s;
+                                &:hover{
+                                    text-decoration: underline;
+                                    text-decoration-color: white;
+                                }
+                                &:active{
+                                    color: darkviolet;
+                                    text-decoration-color: darkviolet;
+                                }
                             }
-                            &:active{
-                                color: darkviolet;
-                                text-decoration-color: darkviolet;
+                        }
+                    }
+                }
+                .index_footer_info{
+                    ul {
+                        li {
+                            list-style: none;
+                            a {
+                                text-decoration: none;
+                                color: white;
+                                font-size: large;
+                                letter-spacing: 2px;
+                                transition: $transition_02s;
+                                &:hover{
+                                    text-decoration: underline;
+                                    text-decoration-color: white;
+                                }
+                                &:active{
+                                    color: darkviolet;
+                                    text-decoration-color: darkviolet;
+                                }
                             }
                         }
                     }
                 }
             }
-            .index_footer_info{
-                ul {
-                    li {
-                        list-style: none;
-                        a {
-                            text-decoration: none;
-                            color: white;
-                            font-size: large;
-                            letter-spacing: 2px;
-                            transition: $transition_02s;
-                            &:hover{
-                                text-decoration: underline;
-                                text-decoration-color: white;
-                            }
-                            &:active{
-                                color: darkviolet;
-                                text-decoration-color: darkviolet;
-                            }
-                        }
+            .row2{
+                height: 50px;
+                .index_footer_social{
+                    a {
+                        margin: 5px;
                     }
                 }
             }
-        }
-        .row2{
-            height: 50px;
-            .index_footer_social{
-                a {
-                    margin: 5px;
-                }
-            }
-        }
-        .row3{
-            height: 100px;
-            .index_footer_copyright{
-                height: 10px;
-                p {
-                    color: white;
+            .row3{
+                height: 100px;
+                .index_footer_copyright{
+                    height: 10px;
+                    p {
+                        color: white;
+                    }
                 }
             }
         }
@@ -551,21 +390,11 @@ nav{
     grid-column: 1/10;
     height: 611px;
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../media/about_background.jpg") no-repeat center center fixed;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(scroll);
     font-family: $gothic;
 }
 .about_content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
     height: 100%;
     width: 100%;
 }
@@ -603,8 +432,6 @@ nav{
     grid-column: 1/10;
     width: 100%;
     height: 450px;
-
-    background: black;
 }
 
 /* FOOTER */
@@ -660,49 +487,22 @@ nav{
     height: 611px;
 }
 .card1, .card2, .card3{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
 }
 .od_img{
     background-image: url('../media/meeting-of-developers.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(scroll);
     height: 225px;
 }
 .osd_img{
     background: url('../media/software\ develp.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(scroll);
     height: 225px;
 }
 .os_img{
     background: url('../media/service.jpg');
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(scroll);
     height: 225px;
-}
-.footer_op_os{
-    background: black;
 }
 @media screen and (max-width: 991px){
     .os_header{
@@ -717,7 +517,7 @@ nav{
     background-color: #00000000;
 }
 .masthead_support{
-    grid-column: 1/9;
+    @extend .footer_op_support;
     grid-row: 100%;
     background: linear-gradient(90deg, #36569C 28.77%, #14213D 100%);
     height: 611px;
@@ -728,23 +528,13 @@ nav{
 
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../media/john-schnobrich-FlPc9_VocJ4-unsplash (2).jpg") no-repeat center center fixed;
 
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(scroll);
 }
 .footer_op_support{
     grid-column: 1/9;
 }
 .contact_main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
     height: 65%;
     width: 25%;
     background-color: white;
@@ -773,11 +563,11 @@ nav{
 /* MEDIA QUERY DE SUPPORT */
 @media screen and (max-width:1162px){
     .support_navbar{
-        grid-column: 1/9;
+        @extend .footer_op_support;
         grid-row: 1/1;
     }
     .masthead_support{
-        grid-column: 1/9;
+        @extend .footer_op_support;
         grid-row: 2/2;
         display: flex;
         flex-direction: column;
@@ -788,14 +578,7 @@ nav{
 
         background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../media/john-schnobrich-FlPc9_VocJ4-unsplash (2).jpg") no-repeat center center fixed;
 
-        background-repeat: no-repeat !important;
-        background-attachment: scroll !important;
-        background-position: center center !important;
-        z-index: auto;
-        background-size: cover !important;
-        -webkit-background-size: cover !important;
-        -moz-background-size: cover !important;
-        -o-background-size: cover !important;
+        @include img_config(scroll);
     }
     .contact_main{
         margin-top: 10%;
@@ -806,7 +589,7 @@ nav{
         display: none;
     }
     .footer_op_support{
-        grid-column: 1/9;
+        @extend .footer_op_support;
         grid-row: 3/3;
         height: 200%;
 
@@ -816,11 +599,11 @@ nav{
 }
 @media screen and (max-width: 900px){
     .support_navbar{
-        grid-column: 1/9;
+        @extend .footer_op_support;
         grid-row: 1/1;
     }
     .masthead_support{
-        grid-column: 1/9;
+        @extend .footer_op_support;
         grid-row: 1/5;
         display: flex;
         flex-direction: column;
@@ -834,7 +617,7 @@ nav{
         height: 65%;
     }
     .footer_op_support{
-        grid-column: 1/9;
+        @extend .footer_op_support;
         grid-row: 5/8;
     }
 }
@@ -884,14 +667,7 @@ nav{
     height: 611px;
     width: 100%;
     background: linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)), url("../media/faq_background.jpg") no-repeat center center fixed;
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(fixed);
     font-family: $gothic;
 }
 .faq_content{
@@ -903,7 +679,6 @@ nav{
 .footer_op_faq{
     width: 100%;
     height: 450pxpx;
-    background: black;
     z-index: 1;
 }
 .navbar-collapse, .question_1, .question_2, .question_3, .question_4, .question_5, .question_6{
@@ -945,18 +720,12 @@ nav{
     text-align: center;
 }
 .register_form_section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
 }
 .register_form_container{
     background: white;
     height: 520px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column-center-center;
     border-radius: 50px;
     font-family: "Roboto",sans-serif;
     margin-top: -100px;
@@ -1008,14 +777,7 @@ nav{
 .store_header{
     height: 603px;
     background-image: url(../media/e_commerce_bg_2.jpg);
-    background-repeat: no-repeat !important;
-    background-attachment: fixed !important;
-    background-position: center center !important;
-    z-index: auto;
-    background-size: cover !important;
-    -webkit-background-size: cover !important;
-    -moz-background-size: cover !important;
-    -o-background-size: cover !important;
+    @include img_config(fixed);
     background-color: #FCFDFF;
     .top_store_title{
         font-family: 'Allura', cursive;
@@ -1080,7 +842,7 @@ nav{
 }
 /* STORE MAIN */
 .store_main{
-    height: 2412px;
+    height: 350vh;
     background-color: #FCFDFF;
     .store_card_container{
         display: flex;
