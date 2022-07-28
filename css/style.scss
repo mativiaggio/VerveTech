@@ -517,7 +517,7 @@ nav{
     background-color: #00000000;
 }
 .masthead_support{
-    @extend .footer_op_support;
+    grid-column: 1/9;
     grid-row: 100%;
     background: linear-gradient(90deg, #36569C 28.77%, #14213D 100%);
     height: 611px;
@@ -563,11 +563,11 @@ nav{
 /* MEDIA QUERY DE SUPPORT */
 @media screen and (max-width:1162px){
     .support_navbar{
-        @extend .footer_op_support; 
+        grid-column: 1/9;
         grid-row: 1/1;
     }
     .masthead_support{
-        @extend .footer_op_support;
+        grid-column: 1/9;
         grid-row: 2/2;
         display: flex;
         flex-direction: column;
@@ -589,7 +589,7 @@ nav{
         display: none;
     }
     .footer_op_support{
-        @extend .footer_op_support;
+        grid-column: 1/9;
         grid-row: 3/3;
         height: 200%;
 
@@ -599,11 +599,11 @@ nav{
 }
 @media screen and (max-width: 900px){
     .support_navbar{
-        @extend .footer_op_support;
+        grid-column: 1/9;
         grid-row: 1/1;
     }
     .masthead_support{
-        @extend .footer_op_support;
+        grid-column: 1/9;
         grid-row: 1/5;
         display: flex;
         flex-direction: column;
@@ -617,7 +617,7 @@ nav{
         height: 65%;
     }
     .footer_op_support{
-        @extend .footer_op_support;
+        grid-column: 1/9;
         grid-row: 5/8;
     }
 }
@@ -790,7 +790,7 @@ nav{
     }
     .store_title{
         font-family: "Roboto", sans-serif;
-        font-size: 93px;
+        font-size: 5rem;
         font-weight: bold;
         letter-spacing: 5px;
         padding-left: 1%;
@@ -843,6 +843,7 @@ nav{
 /* STORE MAIN */
 .store_main{
     height: 350vh;
+    width: 100%;
     background-color: #FCFDFF;
     .store_card_container{
         display: flex;
@@ -1441,7 +1442,37 @@ nav{
         margin: 0;
     }
 }
+@media screen and (max-width: 420px){
+    .store_header {
+        .store_title {
+            font-size: 350%;
+        }
+    }
+}
 // BUILDING A NEW PAGE
-.go-back-btn {
-    height: 1500px;
+.building-header {
+    h1 {
+        font-family: "Inter", sans-serif;
+        text-align: center;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+    .go-back-btn {
+        z-index: 1;
+        height: 50px;
+        width: 10em;
+        border-radius: 50px;
+        border: 1px solid black;
+        background-color: rgba(277, 277, 277, 0.3);
+        backdrop-filter: blur(2px);
+        transition: 0.2s ease;
+        &:hover {
+            background-color: white;
+        }
+    
+    }
+    .building-page-svg{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+    }
 }
