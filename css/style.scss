@@ -563,7 +563,7 @@ nav{
 /* MEDIA QUERY DE SUPPORT */
 @media screen and (max-width:1162px){
     .support_navbar{
-        @extend .footer_op_support;
+        @extend .footer_op_support; 
         grid-row: 1/1;
     }
     .masthead_support{
@@ -1440,4 +1440,8 @@ nav{
     .store_section_container{
         margin: 0;
     }
+}
+// BUILDING A NEW PAGE
+.go-back-btn {
+    height: 1500px;
 }
