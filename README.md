@@ -37,3 +37,11 @@
 ## Se aplicaron los siguientes conceptos:
     - En la parte de SASS II se aplico mapa, localizado en _maps.scss, en el mismo se encuentra los hex del fondo del footer en cada una de las paginas, se puede probar facilmente cambiando el hexadecimal. Tambien con los colores de los botones de la pagina de inicio "Hardware" y "SOftware". Se aplico un extend (este  fue bastante basico porque no encontre una mejor manera de aplicarlo dentro de este proyecto) como "@extend .footer_op_support;". Por ultimo de aplico mixins en _mixins.scss en donde se establecio la "configuracion de imagenes" utilizando el $attach para definir el attachment; se establecio un flex-column-center-center.
     - En la parte de SEO se coloco una descripcion a cada uno de los html, un tag con las keywords y se hicieron las verificaciones de google tanto search Google como optimizacion para moviles de Google. A su vez se genero un sitemap. 
+
+# Registro tercer entrega del proyecto final.
+## Se aplicaron los siguientes cambios: 
+    - Se elimino los textos simulados y se los reemplazo por texto real.
+    - Se optimizo el responsive en ciertos html que fallaba.
+    - Se implemento el html "building-a-new-page.html", aqui se redireccionan todas aquellas paginas que no han sido contruidas ya que no forman parte de las 5 paginas del final, con el objetivo de que no haya links sin funcionar. En el mismo se aplico un SVG.
+    - Se subio la pagina a la direccion: https://vervetech.netlify.app/ .
+    - Se corrigio el error en el .ico en todos los html de la pagina.
