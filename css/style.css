@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   font-family: "Gothic A1", sans-serif;
+  outline: 1px solid red;
 }
 
 /* NAVBAR */
@@ -277,7 +278,7 @@ nav .shopping_cart .shopping_cart_a {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   margin-top: 50px;
 }
 
@@ -302,7 +303,6 @@ nav .shopping_cart .shopping_cart_a {
 }
 
 .hardware_topic {
-  margin-right: 25px;
   text-decoration: none;
   display: inline-flex;
   height: 80px;
@@ -328,7 +328,6 @@ nav .shopping_cart .shopping_cart_a {
 }
 
 .software_topic {
-  margin-left: 25px;
   text-decoration: none;
   display: inline-flex;
   height: 80px;
