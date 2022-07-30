@@ -111,6 +111,12 @@ nav{
 #masthead_form_container{
     /* height: 611px; */
     background-color: white;
+    .form_index_buttons {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 .grid_title{
     @include flex-column-center-center;
@@ -298,6 +304,15 @@ nav{
 }
 .software_topic:active{
     background-color: #b16d00;
+}
+@media screen and (max-width: 472px){
+    .main_buttons {
+        flex-direction: column;
+        align-items: center;
+        .hardware_topic {
+            margin-bottom: 15px;
+        }
+    }
 }
 /* FOOTERS */
 @each $footer, $bg_color in $footer_bg{

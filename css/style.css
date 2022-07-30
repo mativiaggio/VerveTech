@@ -108,6 +108,12 @@ nav .shopping_cart .shopping_cart_a {
   /* height: 611px; */
   background-color: white;
 }
+#masthead_form_container .form_index_buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .grid_title {
   display: flex;
@@ -350,6 +356,15 @@ nav .shopping_cart .shopping_cart_a {
   background-color: #b16d00;
 }
 
+@media screen and (max-width: 472px) {
+  .main_buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main_buttons .hardware_topic {
+    margin-bottom: 15px;
+  }
+}
 /* FOOTERS */
 .footer_index {
   background-color: #000000;
