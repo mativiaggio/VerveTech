@@ -274,8 +274,10 @@ nav .shopping_cart .shopping_cart_a {
 }
 
 .main_buttons {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin-top: 50px;
 }
 
